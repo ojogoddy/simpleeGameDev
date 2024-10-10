@@ -116,7 +116,7 @@ const endGame = () =>{
 
     //redirect to game over page and pass the winner message via sessionstorage
     sessionStorage.setItem("gameOverMessage", winnerMessage)
-    window.location.href = "/gameover/winner.html"
+    window.location.href = "/gameover/index.html"
 }
 
 //start the timer function
@@ -133,7 +133,7 @@ const startTimer = () =>{
         }
     }, 1000) //runs every one seconds
 }
-const images = ["/asset/Tiger.png", "/asset/Turtle.png", "/asset/BabyChick.png", "/asset/Bear.png", "/asset/Cat.png", "/asset/Chicken.png", "/asset/Cow.png", "/asset/Dog.png", "/asset/Koala.png", "/asset/LadyBeetle.png", "/asset/Monkey.png", "/asset/Octopus.png", "/asset/Panda.png", "/asset/Penguin.png", "/asset/Rabbit.png", "/asset/Sheep.png", "/asset/Snake.png", "/asset/SpiralShell.png"]
+const images = ["/public/asset/Tiger.png", "/public/asset/Turtle.png", "/public/asset/BabyChick.png", "/public/asset/Bear.png", "/public/asset/Cat.png", "/public/asset/Chicken.png", "/public/asset/Cow.png", "/public/asset/Dog.png", "/public/asset/Koala.png", "/public/asset/LadyBeetle.png", "/public/asset/Monkey.png", "/public/asset/Octopus.png", "/public/asset/Panda.png", "/public/asset/Penguin.png", "/public/asset/Rabbit.png", "/public/asset/Sheep.png", "/public/asset/Snake.png", "/public/asset/SpiralShell.png"]
 
 let shuffledImages = [];
 

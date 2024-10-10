@@ -5,10 +5,10 @@ const handlePasswordView = () =>{
 
     if(passwordInput.type === "password"){
         passwordInput.type = "text"
-        passwordIcon.src = "/asset/eye.svg"
+        passwordIcon.src = "/public/asset/eye.svg"
     }else{
         passwordInput.type = "password"
-        passwordIcon.src = "/asset/eye-closed.svg"
+        passwordIcon.src = "/public/asset/eye-closed.svg"
     }
 }
 
@@ -18,10 +18,10 @@ const handleConfirmView = () =>{
 
     if(passwordInput.type === "password"){
         passwordInput.type = "text"
-        passwordIcon.src = "/asset/eye.svg"
+        passwordIcon.src = "/public/asset/eye.svg"
     }else{
         passwordInput.type = "password"
-        passwordIcon.src = "/asset/eye-closed.svg"
+        passwordIcon.src = "/public/asset/eye-closed.svg"
     }
 }
 const handleLoginPassView = () =>{
@@ -30,10 +30,10 @@ const handleLoginPassView = () =>{
 
     if(passwordInput.type === "password"){
         passwordInput.type = "text"
-        passwordIcon.src = "/asset/eye.svg"
+        passwordIcon.src = "/public/asset/eye.svg"
     }else{
         passwordInput.type = "password"
-        passwordIcon.src = "/asset/eye-closed.svg"
+        passwordIcon.src = "/public/asset/eye-closed.svg"
     }
 }
 // Utility function to display error messages in the DOM

@@ -46,7 +46,7 @@ const checkUserLogin = (mode) =>{
     const LoggedInUser = sessionStorage.getItem("LoggedInUser")
     if(LoggedInUser){
         setOpponentMode(mode)
-        window.location.href = "/gameplay/game.html"
+        window.location.href = "/gameplay/index.html"
     }else{
         Swal.fire({
             icon: 'warning',
