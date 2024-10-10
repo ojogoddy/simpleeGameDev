@@ -174,7 +174,7 @@ const handleSignin =(event)=>{
         sessionStorage.setItem("LoggedInUser", JSON.stringify(user))
 
         // redirect to next page
-        window.location.href = "/home/index.html"
+        window.location.href = "/index.html"
 
     }catch(error){
         displayLoginErrorMessage(error)
