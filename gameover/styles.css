@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #602080, #3a007f);
+    color: white;
+}
+
+.game-over-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    padding: 30px 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .winnertext{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+  .score-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 5px 5px 5px;
+  }
+  .winner-score{
+    color: goldenrod;
+    margin-left: 45px;
+  }
+  .winner-score p{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .winner-score h1{
+    font-size: 60px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  .loser-score{
+    margin-right: 40px;
+  }
+  .loser-score p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 10px;
+  }
+  .loser-score h1{
+    font-size: 28px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+  .btn-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 34px;
+  }
+
+  .play-button{
+    color: white;
+    padding: 12px 0px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+  .btn-bestscore{
+    color: white;
+    border-radius: 24px;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+  }
+  .btn-bestscore p{
+    font-size: 20px;
+    line-height: 12px;
+
+    padding: 18px;
+  }

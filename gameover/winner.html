@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="game-over-card">
+
+    <!-- Title: Game Over -->
+    <h1 class="winnertext" id="winnerMessage">YOU WON</h1>
+
+    <!-- Score Display -->
+    <div class="score-wrap">
+     <div class="winner-score">
+      <p>Your Score</p>
+      <h1 id="winnerscore"></h1>
+     </div>
+     <div class="loser-score">
+      <p class="">Opponent Score</p>
+      <h1 id="loserScore" ></h1>
+     </div>
+    </div>
+
+    <!-- best score -->
+    <div class="btn-bestscore">
+      <p id="bestScoreValue"></p>
+    </div>
+
+    <!-- Play Again Button -->
+    <div class="btn-wrap">
+      <a href="/gameplay/game.html" class="play-button">
+        Play Again
+      </a>
+      <a href="/home/index.html" class="play-button">
+        Home
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

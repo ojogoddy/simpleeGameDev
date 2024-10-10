@@ -1,0 +1,132 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #602080, #3a007f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    width: 470px;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+/* Profile Section */
+.profile {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* Game Title */
+.gametitle-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 90px;
+    gap: 10px;
+}
+.game-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+.title-image{
+    width: 60px;
+    object-fit: cover;
+}
+
+/* Menu Buttons */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-buttons a{
+    text-decoration: none;
+}
+
+.menu-button {
+    font-size: 1.1rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Individual Button Styles */
+.player2 {
+    background-color: #ff4d4d;
+}
+
+.player2:hover {
+    background-color: #e04545;
+}
+
+.computer {
+    background-color: #4db8ff;
+}
+
+.computer:hover {
+    background-color: #3aa1e0;
+}
+
+.leaderboard {
+    background-color: #ffcc00;
+}
+
+.leaderboard:hover {
+    background-color: #e6b800;
+}
+
+.logout {
+    background-color: #808080;
+    margin-top: -22px;
+}
+.login {
+    background-color: #808080;
+}
+
+.logout:hover {
+    background-color: #666666;
+}

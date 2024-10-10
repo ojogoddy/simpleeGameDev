@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="leaderboard">
+        <header class="leaderboard-header">
+            <img src="/asset/trophy1.svg" alt="Trophy" class="leaderboard-icon">
+            <h1>Leaderboard</h1>
+        </header>
+
+        <ul class="leaderboard-list" id="leaderboard-list"></ul>
+
+        <div class="home-btn">
+             <a href="/home/index.html">Home</a>
+        </div>
+    </section>
+
+    <script>
+        // ..function to display all the highscores of all users
+        const displayHighScores = () =>{
+            // retrieve all users first from local storage
+            const users = JSON.parse(localStorage.getItem("users")) || []
+            console.log(users)
+
+            // the highscore container element
+            const highscoreList = document.getElementById("leaderboard-list")
+
+            // check if there are users stored in localStorage
+            if(users.length > 0){
+                highscoreList.innerHTML = "";
+
+                //sort users by highscore in descending order
+                users.sort((a, b) => b.highScore - a.highScore)
+
+                // display user by their highscore
+                users.forEach(element => {
+                    const listItem = document.createElement("li")
+                    listItem.classList.add("leaderboard-item")
+                    listItem.innerHTML = `
+                    <div class="player-info">
+                    <span class="player-name">${element.fullName}</span>
+                </div>
+                <div class="player-score">
+                    <span class="score-value">${element.highScore}</span>
+                    <img src="/asset/star.svg" alt="Star Icon" class="score-icon">
+                </div>
+                    `
+                highscoreList.appendChild(listItem)
+                });
+            }
+        }
+
+        window.onload = displayHighScores
+    </script>
+</body>
+</html>
