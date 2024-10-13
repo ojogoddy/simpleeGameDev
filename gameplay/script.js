@@ -14,7 +14,7 @@ const handleOpponentName = () =>{
     if(users === "computer"){
         document.getElementById("opponentName").textContent = "Computer"
     }else{
-        document.getElementById("opponentName").textContent = "Player 2"
+        document.getElementById("opponentName").textContent = "Player"
     }
 }
 
@@ -24,8 +24,9 @@ let timerElement = document.getElementById("timer")
 let mainPlayerElement = document.querySelector(".main-player")
 let opponentElement = document.querySelector(".opponent")
 let countdown = 10
-let totalBoxes = 0 //to track the total number of boxes
-let revealedBoxes = 0 // to track how many boxes are revealed
+let totalBoxes = 0
+let revealedBoxes = 0
+
 //score for each player
 let mainPlayerScore = 0
 let opponentScore = 0
@@ -206,11 +207,11 @@ const populateBoxes = () =>{
                 switchPlayer() //switch to main players turn after click
             }
 
-            revealedBoxes++ //increase revealed boxes count
+            revealedBoxes++
 
             //check if all boxes are revealed
             if(revealedBoxes === totalBoxes){
-                endGame()  //end game if all boxes are revealed
+                endGame()
             }
         })
     })

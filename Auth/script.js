@@ -64,12 +64,12 @@ const validateEmail = (email) =>{
     }
 }
 
-const validatePassword = (password)=>{
-    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/
-    if(!passwordPattern.test(password)){
-        throw new Error ("Password must be at least 8 characters long, contain one uppercase and one number, lowercase alse")
+const validatePassword = (password) => {
+    const passwordPattern = /^[A-Za-z\d]{8,}$/;
+    if (!passwordPattern.test(password)) {
+        throw new Error("Password must be at least 8 characters long and contain only letters and numbers.");
     }
-}
+};
 
 // function to check password and confirm password matches
 const validateConfirmPassword = (password, confirmPassword)=>{
